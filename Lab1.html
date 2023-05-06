@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab1 exer</title>
+        <meta charset="UTF-8">
+        <!-- Κουλουράς Ιωάννης Ε20075-->
+        <!-- Δεν μπόρεσα να βρώ ακριβώς σωστό font, πήγα με το πιο κοντινό-->
+        <style>
+            * {
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: normal;
+                line-height: 1.75;
+                text-align: center;
+                color: white;
+                padding: 0;
+                margin: 0;
+            }
+            #header {
+                background-color: #1abc9c;
+            }
+            #nav {
+                text-decoration: none;
+            }
+            #about-us {
+                background-color: #474e5d;
+            }
+            #our-projects {
+                background-color: #2f2f2f;
+            }
+            #contact-us {
+                background-color: #242424;
+            }
+            #subsection3 {
+                background-color: white;
+                color: brown;
+            }
+            #footer {
+                background-color: #2f2f2f;
+            }
+        </style>
+    </head>
+    <body>
+        <header id="header"><h4>
+            <br><br>
+            <!-- Έχω ανεβάσει την εικόνα στο imgur -->
+            <!-- Υπάρχουν μερικές μικρές διαφορές από την εικόνα επειδή ζητείται το logo της εταιρίας στο επιπλέον header
+                καθώς και στοιχεία επικοινωνίας στο footer -->
+            <img src="https://i.imgur.com/dbdytHK.png" alt="Our Company" width="5%"/><br>
+            Who We Are?<br>
+            <nav>
+                <a class="nav" style="text-decoration: none;" href="#header"> Home </a>|
+                <a class="nav" style="text-decoration: none;" href="#about-us"> About Us </a>|
+                <a class="nav" style="text-decoration: none;" href="#our-projects"> Our Projects </a>|
+                <a class="nav" style="text-decoration: none;" href="#contact-us"> Contact Us </a>
+            </nav>
+            <h6><br></h6>
+            WE HAVE AN EYE FOR DESIGN
+            <br><br><br>
+        </h4></header>
+
+        <div id="about-us">
+            <br><br>
+            <h3>About Us</h3>
+            Lorem, ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat.
+            <h5><br></h5>
+            <h2>Image of the company</h2>
+            <img src="https://i.imgur.com/dbdytHK.png" alt="Our Company" width="25%"/>
+            <br><br>
+        </div>
+
+        <div id="our-projects">
+            <h6><br></h6>
+            <h3>Our Projects</h3>
+            <span id="subsection3">Portfolio</span>
+            <table style="width: 95%; text-align:center;">
+				<tr>
+					<th>Title</th>
+					<th>Domain</th>
+					<th>Date</th>
+                    <th>Days to complete</th>
+				</tr>
+				<tr>
+                    <td>Neural Networks</td>
+                    <td>Deep Learning</td>
+                    <td>29/03/2022</td>
+                    <td>30</td>
+				</tr>
+				<tr>
+					<td>Natural Language Processing</td>
+                    <td>Artificial Intelligence</td>
+                    <td>31/03/2022</td>
+                    <td>60</td>
+				</tr>
+                <tr>
+					<td>Tensorflow</td>
+                    <td>Open Source Tools</td>
+                    <td>31/12/2021</td>
+                    <td>45</td>
+				</tr>
+                <tr>
+                    <td>Eshop</td>
+                    <td>Web Developing</td>
+                    <td>31/01/2022</td>
+                    <td>40</td>
+                </tr>
+			</table>
+            <br>
+        </div>
+        
+        <div id="contact-us">
+            <br><br>
+            <h3>Contact Us</h3>
+            <a style="color:rgb(32, 128, 255); text-decoration: none;" href="mailto:lab1@example.com">Click here to send an email</a> | 
+            <a style="color:rgb(32, 128, 255); text-decoration: none;" href="tel:+300123456789">Click here to call us</a>
+            <form action="" method="get" class="form">
+                <div class="form">
+                    <label for="name">Ονομα:<br></label>
+                    <input style="color: black;" type="text" name="name" id="name" required>
+                </div>
+                <div class="form">
+                    <label for="name">Επώνυμο:<br></label>
+                    <input style="color: black;" type="text" name="surname" id="surname" required>
+                </div>
+                <div class="form">
+                    <label for="email">Email:<br></label>
+                    <input style="color: black;" type="email" name="email" id="email" required>
+                </div>
+                <div class="form">
+                    Φύλο:<br>
+                    <label for="male">Άνδρας</label>
+                    <input type="radio" name="gender" value="male" id="gender" required>&nbsp;
+                    <label for="male">Γυναίκα</label>
+                    <input type="radio" name="gender" value="female" id="gender" required>&nbsp;
+                    <label for="male">Άλλο</label>
+                    <input type="radio" name="gender" value="other" id="gender" required>
+                </div>
+                <div class="form">
+                    <label for="message">Μήνυμα:<br></label>
+                    <textarea style="color: black; text-align: left; resize: none; width: 150px" id="message" name="message" rows="12" required></textarea>
+                </div>
+                <div class="form">
+                    <input style="color: black;" type="submit" onclick="alert('Message successfuly sent');" value="Στείλε Μήνυμα!">
+                </div>
+            </form>
+            <br><br>
+        </div>
+
+        <footer id="footer">
+            <br><br>
+            About Us Onepage <a style="color:rgb(32, 128, 255); text-decoration: none;" href="https://www.unipi.gr/">unipi.gr</a><br>
+            Contact us at:<br>
+            <a style="color:rgb(32, 128, 255); text-decoration: none;" href="mailto:lab1@example.com">lab1@example.com</a> | 
+            <a style="color:rgb(32, 128, 255); text-decoration: none;" href="tel:+300123456789">+30 0123456789</a> |
+            <a style="color:rgb(32, 128, 255); text-decoration: none;" target="_blank" href="https://goo.gl/maps/Eg3JPTiPw3drVDUx9">Καραολή και Δημητρίου 80, Πειραιάς 185 34</a>
+            <br><br><br>
+        </footer>
+    </body>
+</html>
